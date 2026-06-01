@@ -59,7 +59,7 @@ will give you -128 (=`i8::MIN`).
 Rust lets you, the developer, choose which approach to use when an integer overflow occurs.
 The behaviour is controlled by the `overflow-checks` profile setting.
 
-If `overflow-checks` is set to `true`, Rust will **panic at runtime** when an integer operation overflows.
+If `overflow-checks` is set to `overflow`, Rust will **panic at runtime** when an integer operation overflows.
 If `overflow-checks` is set to `false`, Rust will **wrap around** when an integer operation overflows.
 
 You may be wondering—what is a profile setting? Let's get into that!
